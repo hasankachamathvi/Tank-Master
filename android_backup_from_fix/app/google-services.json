@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "688536617814",
+    "project_id": "tank-controller-c9912",
+    "storage_bucket": "tank-controller-c9912.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688536617814:android:34c63db6fda8de3db1ccf7",
+        "android_client_info": {
+          "package_name": "com.e"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhwkh8m0Cy7Mpe6BRDjgmhCFLVP-lK1uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688536617814:android:635715ba0137d9d1b1ccf7",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhwkh8m0Cy7Mpe6BRDjgmhCFLVP-lK1uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

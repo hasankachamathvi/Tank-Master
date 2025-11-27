@@ -1,0 +1,40 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testapp"> <!--  Your package name -->
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="testapp"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/LaunchTheme">
+        
+        <!-- MainActivity is the entry point of the app -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Flutter uses this for background execution -->
+        <meta-data
+            android:name="io.flutter.embedding.android.NormalTheme"
+            android:resource="@style/NormalTheme"/>
+        <!-- Indicate the Android embedding version for the Flutter tool (2 = v2 embedding) -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+
+</manifest>
+
+
