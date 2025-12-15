@@ -1,130 +1,66 @@
-Smart Water Tank Management System
-📌 Overview
+# 💧 Tank Master – IoT-Based Water Tank Management System
 
-The Smart Water Tank Management System is an IoT-based solution designed to automate water level monitoring, track water usage, and control water flow efficiently. It integrates sensors, a microcontroller, cloud services, and a mobile application to ensure real-time updates and smart actions such as pump automation and overflow prevention.
+## Project Overview
 
-This system helps reduce water wastage, provides insights into consumption patterns, and offers users a convenient way to monitor and manage water resources from anywhere.
+**Tank Master** is an IoT-based smart water tank management system developed to automate water level monitoring, optimize water usage, and prevent overflow in households and institutions. The system integrates NodeMCU/ESP32 microcontrollers with ultrasonic sensors, flow sensors, relay modules, and solenoid valves to provide real-time water management.
 
-📡 Key Features
+Data is sent to **Firebase** for cloud storage and synchronization, while a **Flutter mobile app** allows users to monitor water levels, usage history, pump control, and receive notifications from anywhere.
 
-Real-time Water Level Monitoring using an ultrasonic sensor
+---
 
-Automatic Pump Control through a relay module
+## Features
 
-Water Flow Measurement using a flow sensor
+* Real-time water level monitoring via ultrasonic sensors
+* Flow rate measurement and consumption tracking
+* Automatic pump and solenoid valve control
+* Notifications for low water level, overflow, or system faults
+* Daily and monthly water usage reports
+* Mobile app for remote monitoring and control
+* Google authentication and user dashboard
 
-Mobile App Dashboard built with Flutter
+---
 
-Firebase Integration for cloud storage, real-time database, and authentication
+## Hardware Components
 
-Smart Alerts
+* NodeMCU/ESP32 Microcontroller
+* Ultrasonic Sensors
+* Flow Sensor
+* 5V Relay Module
+* Buzzer
+* Water Pump
+* Solenoid Valve
+* Buck Converter
+* Jumper Wires and Breadboard
 
-Low water level
+---
 
-Overflow warning
+## Software Technologies
 
-Leak detection (via flow monitoring)
+* **Mobile App:** Flutter
+* **Cloud Backend:** Firebase (Authentication, Realtime Database, Firestore)
+* **Microcontroller Programming:** Arduino IDE
+* **Version Control:** GitHub
 
-Data Visualization such as usage history & consumption patterns
+---
 
-Optional AI Support with Gemini API for predictive analysis
+## Advantages
 
-Secure, cloud-synced system accessible from any device
+* Automates water management, reducing manual oversight
+* Prevents water wastage and overflow
+* Provides historical consumption data for decision-making
+* Scalable for multiple tanks or larger facilities
+* Cost-effective and sustainable solution
 
-🛠 Tools and Technologies Used
-Software
+---
 
-Visual Studio Code – Main IDE for mobile app development
+## Future Enhancements
 
-Flutter – Cross-platform mobile UI framework
+* Camera-based water level detection with AI
+* Offline app functionality with automatic sync
+* Leak detection and water consumption prediction using AI
+* Multi-tank support for homes, apartments, and schools
+* Solar-powered system integration
 
-Firebase
+---
 
-Authentication
-
-Firestore
-
-Realtime Database
-
-Cloud Storage
-
-Arduino IDE – Used to program ESP32/NodeMCU
-
-GitHub – Version control and project collaboration
-
-Gemini AI API (optional) – Smart prediction & insights
-
-Hardware Components
-
-Microcontroller – ESP32 / NodeMCU
-
-Ultrasonic Sensor
-
-Flow Sensor
-
-5V Relay Module
-
-Buzzer
-
-Water Pump
-
-Solenoid Valve
-
-Buck Converter
-
-Power Supply
-
-Breadboard
-
-Jumper Wires
-
-📐 System Architecture
-
-1. Hardware Layer
-Collects water level and flow data → Sends to Firebase → Controls pump via relay
-
-2. Cloud Layer (Firebase)
-Stores sensor values, user data, and syncs with the app in real time
-
-3. Mobile Application
-Displays tank status, alerts, history, usage analytics, and manual controls
-
-⚙️ How It Works
-
-Ultrasonic sensor detects tank water level
-
-Flow sensor measures incoming/outgoing water
-
-Data is sent to Firebase through ESP32/NodeMCU
-
-Firebase updates reflect instantly in the Flutter mobile app
-
-Relay module automatically turns pump ON/OFF based on thresholds
-
-Optional AI module predicts water usage or alerts abnormalities
-
-📱 Mobile App Features
-
-View real-time tank level
-
-Monitor water usage history
-
-Set minimum/maximum thresholds
-
-Receive push notifications
-
-Control pump manually (if allowed)
-
-Predict water availability (AI support)
-
-🚀 Future Improvements
-
-Camera module for visual tank monitoring
-
-Offline mode with local storage sync
-
-Smart home integration (Google Home, Alexa)
-
-Multi-tank support for apartments/industries
-
-Solar-powered hardware version
+© 2025 | Tank Master – IoT Water Tank Management System | NIBM Galle
